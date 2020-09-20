@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
 /*
 	Hielo by TEMPLATED
@@ -2889,7 +2890,7 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #f2f2f2;
+			background-color: #DCDCDC;
 			color: #a6a6a6;
 		}
 
@@ -3099,7 +3100,7 @@
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
-			background-image: url(../../images/bg.jpg);
+			background-color: gray;
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -3708,7 +3709,7 @@
 	}
 
 	#header {
-		background: rgba(0, 0, 0, 0.975);
+		background: rgba(0, 0, 0, 0.5);
 		color: #a6a6a6;
 		cursor: default;
 		height: 3.25em;
@@ -3793,7 +3794,7 @@
 				padding-right: 1.25em;
 			}
 
-			@media screen and (max-width: 736px) {
+			@media screen and (max-width: 900px) {
 
 				#header > a {
 					padding: 0 0.5em;
@@ -3807,6 +3808,18 @@
 					#header > a:last-child {
 						padding-right: 1em;
 					}
+
+				.big-screen {
+					display: none !important;
+				}
+
+			}
+
+			@media screen and (min-width: 900px) {
+
+				.small-screen {
+					display: none !important;
+				}
 
 			}
 
@@ -3866,6 +3879,18 @@
 
 	}
 
+	.imgholder {
+		margin:0 0 0 40px;
+	    height: 95px;
+	}
+
+	@media screen and (max-width: 1680px) {
+		.imgholder {
+			margin: 0 0 0 30px;
+		    height: 75px;
+		}
+	}
+
 /* Menu */
 
 	#menu {
@@ -3878,7 +3903,7 @@
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: rgba(0, 0, 0, 0.95);
+		background: rgba(0, 0, 0, 0.6);
 		box-shadow: none;
 		color: #000;
 		height: 100%;
@@ -4041,8 +4066,8 @@
 
 		.banner.third {
 			padding: 0;
-			min-height: 70vh;
-			height: 70vh !important;
+			min-height: 80vh;
+			height: 80vh !important;
 		}
 
 		.banner.half {

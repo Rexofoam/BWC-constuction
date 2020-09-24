@@ -3881,13 +3881,13 @@
 
 	.imgholder {
 		margin:0 0 0 40px;
-	    height: 95px;
+	    height: 56.5px;
 	}
 
 	@media screen and (max-width: 1680px) {
 		.imgholder {
 			margin: 0 0 0 30px;
-		    height: 75px;
+		    height: 44px;
 		}
 	}
 

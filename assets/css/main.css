@@ -1550,6 +1550,11 @@
 
 	}
 
+	@media screen and (max-width: 960px) {
+		.mobile-resize {
+			width: 100% !important
+		}
+	}
 /* Basic */
 
 	@-ms-viewport {
@@ -3098,9 +3103,8 @@
 			}
 
 		.wrapper.style3 {
-			background-color: #000;
-			color: #bfbfbf;
-			background-color: gray;
+			color: gray;
+			background-color: white;
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;

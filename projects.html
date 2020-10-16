@@ -10,7 +10,36 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<style type="text/css">
+			.swiper-container {
+		      width: 100%;
+		      height: 420px;
+		      min-height: 100px;
+		    }
+
+		    .swiper-slide {
+		      text-align: center;
+		      font-size: 18px;
+		      background: #fff;
+
+		      /* Center slide text vertically */
+		      display: -webkit-box;
+		      display: -ms-flexbox;
+		      display: -webkit-flex;
+		      display: flex;
+		      -webkit-box-pack: center;
+		      -ms-flex-pack: center;
+		      -webkit-justify-content: center;
+		      justify-content: center;
+		      -webkit-box-align: center;
+		      -ms-flex-align: center;
+		      -webkit-align-items: center;
+		      align-items: center;
+		    }
+		  </style>
 	</head>
+
 	<body class="subpage">
 
 		<header id="header">
@@ -29,8 +58,7 @@
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About Us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="projects.html">Projects</a></li>
+					<li><a href="services.html">Services</a></li>
 					<li><a href="gallery.html"><b>Gallery</b></a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
@@ -45,8 +73,8 @@
 					</header>
 					<br><br>
 					<ul class="actions align-center">
-						<li><a href="projects.html" class="button">Featured</a></li>
-						<li><a href="history.html" class="button alt">History</a></li>
+						<li><a href="projects.html" class="button hid-size">Featured</a></li>
+						<li><a href="history.html" class="button alt hid-size">History</a></li>
 					</ul>
 				</div>
 			</section>
@@ -56,15 +84,97 @@
 				<div class="inner">
 					<div class="box">
 						<div class="content">
-							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Lorem ipsum dolor</h2>
-							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dignissim augue, in iaculis neque. Etiam bibendum felis ac vulputate pellentesque. Cras non blandit quam. Nunc porta, est non posuere sagittis, neque nunc pellentesque diam, a iaculis lacus urna vitae purus. In non dui vel est tempor faucibus. Aliquam erat volutpat. Quisque vel est vitae nibh laoreet auctor. In nec libero dui. Nulla ullamcorper, dolor nec accumsan viverra, libero eros rutrum metus, vel lacinia magna odio non nunc. Praesent semper felis eu rhoncus aliquam. Donec at quam ac libero vestibulum pretium. Nunc faucibus vel arcu in malesuada. Aenean at velit odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas commodo erat eget molestie sollicitudin. Donec imperdiet, ex sed blandit dictum, ipsum metus ultrices arcu, vitae euismod nisl sapien vitae tortor.</p>
+							<div class="box alt">
+								<div class="row 50% uniform">
+									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 5px 5px 5px; min-height: 450px;">
+										 <!-- Swiper -->
+										  <div class="swiper-container">
+										    <div class="swiper-wrapper">
+										      <div class="swiper-slide" style="background-image:url(images/toyo/1.JPG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/toyo/2.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/toyo/3.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/toyo/4.JPG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/toyo/5.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/toyo/6.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/toyo/7.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/toyo/8.JPEG)"></div>
+										    </div>
+										    <!-- Add Pagination -->
+										    <div class="swiper-pagination"></div>
+										    <!-- Add Arrows -->
+										    <div class="swiper-button-next"></div>
+										    <div class="swiper-button-prev"></div>
+										  </div>
+									</div>
+									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 25px 25px 5px 25px; min-height: 450px;">
+										<h2 >Toyo Tyre Malaysia Phase 2</h2>
+										<ul>
+											<li style="color: black;text-align: left"> Site clearance</li>
+											<li style="color: black;text-align: left"> Road and Drainage </li>
+											<li style="color: black;text-align: left"> Earth work.</li>
+										</ul>
+									</div>
 
-							<p>Vivamus nec odio ac ligula congue feugiat at vitae leo. Aenean sem justo, finibus sed dui eu, accumsan facilisis dolor. Fusce quis dui eget odio iaculis aliquam vel sed velit. Nulla pellentesque posuere semper. Nulla eu sagittis lorem, a auctor nulla. Sed ac condimentum orci, ac varius ante. Nunc blandit quam sit amet sollicitudin sodales.</p>
-
-							<p>Vivamus ultricies mollis mauris quis molestie. Quisque eu mi velit. In et cursus nibh. Donec facilisis, orci sed mollis hendrerit, nunc risus mattis odio, eget efficitur nisl orci a lectus. Aenean finibus neque convallis orci sollicitudin tincidunt. Vivamus lacinia facilisis diam, quis facilisis nisi luctus nec. Aliquam ac molestie enim, ut ultrices elit. Fusce laoreet vulputate risus in tincidunt. Sed commodo mollis maximus. Nullam varius laoreet nibh sit amet facilisis. Donec ac odio vehicula, consequat elit et, sodales justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ac auctor mauris, in hendrerit libero. </p>
+									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 25px 5px 25px; min-height: 450px; margin-top: 10px;">
+										<h2 style="text-align: left">Japan Life Line (JLL) Malaysia Sdn Bhd</h2>
+										<ul>
+											<li style="color: black;text-align: left"> Site clearance</li>
+											<li style="color: black;text-align: left"> Road and Drainage </li>
+											<li style="color: black;text-align: left"> Earth work.</li>
+										</ul>
+									</div>
+									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 5px 5px 5px; min-height: 450px; margin-top: 10px;">
+										 <!-- Swiper -->
+										  <div class="swiper-container">
+										    <div class="swiper-wrapper">
+										      <div class="swiper-slide" style="background-image:url(images/Jll/1.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/Jll/2.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/Jll/3.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/Jll/4.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/Jll/5.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/Jll/6.JPEG)"></div>
+										    </div>
+										    <!-- Add Pagination -->
+										    <div class="swiper-pagination"></div>
+										    <!-- Add Arrows -->
+										    <div class="swiper-button-next"></div>
+										    <div class="swiper-button-prev"></div>
+										  </div>
+									</div>
+									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 5px 5px 5px; min-height: 450px; margin-top: 10px;">
+										 <!-- Swiper -->
+										  <div class="swiper-container">
+										    <div class="swiper-wrapper">
+										      <div class="swiper-slide" style="background-image:url(images/ckt/1.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/2.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/3.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/4.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/5.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/6.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/7.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/8.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/8.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/8.JPEG)"></div>
+										      <div class="swiper-slide" style="background-image:url(images/ckt/8.JPEG)"></div>
+										    </div>
+										    <!-- Add Pagination -->
+										    <div class="swiper-pagination"></div>
+										    <!-- Add Arrows -->
+										    <div class="swiper-button-next"></div>
+										    <div class="swiper-button-prev"></div>
+										  </div>
+									</div>
+									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 25px 5px 25px; min-height: 450px; margin-top: 10px;">
+										<h2 style="text-align: center">Roadwork Upgrading From Damar Laut To Changkat Jering</h2>
+										<ul>
+											<li style="color: black;text-align: left"> Site clearance</li>
+											<li style="color: black;text-align: left"> Road and Drainage </li>
+											<li style="color: black;text-align: left"> Bridge work.</li>
+											<li style="color: black;text-align: left"> Slope protection.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
 						</div>
 					</div>
@@ -116,6 +226,26 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+			 <!-- Initialize Swiper -->
+			  <script>
+			    var swiper = new Swiper('.swiper-container', {
+			      spaceBetween: 30,
+			      centeredSlides: true,
+			      autoplay: {
+			        delay: 1500,
+			        disableOnInteraction: false,
+			      },
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+			  </script>
 
 	</body>
 </html>

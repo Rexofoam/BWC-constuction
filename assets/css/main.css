@@ -1888,6 +1888,16 @@
 		border-color: rgba(144, 144, 144, 0.25);
 	}
 
+	@media screen and (max-width: 1000px) {
+		.hid-size {
+			max-width:  130px !important;
+			max-height:  40px !important;
+			font-size: 12px;
+			padding: 2px;
+			margin: 0px;
+		}
+	}
+
 /* Button */
 
 	input[type="submit"],
@@ -4505,3 +4515,6 @@
 			margin-left: 50px;
 		}
 	}
+
+
+	

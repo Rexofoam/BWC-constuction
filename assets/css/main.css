@@ -2913,7 +2913,7 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #DCDCDC;
+			background-color: #FFFFE0;
 			color: #a6a6a6;
 		}
 
@@ -3121,8 +3121,8 @@
 			}
 
 		.wrapper.style3 {
-			color: gray;
-			background-color: white;
+			color: white;
+			background-color: #7c9cd4;
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -3218,7 +3218,7 @@
 					.wrapper.style3 input[type="button"].alt.icon:before,
 					.wrapper.style3 button.alt.icon:before,
 					.wrapper.style3 .button.alt.icon:before {
-						color: #999999;
+						color: white;
 					}
 
 				.wrapper.style3 input[type="submit"].special,
@@ -3385,7 +3385,7 @@
 				transition-delay: 1.25s;
 				content: '';
 				display: block;
-				background-color: rgba(0, 0, 0, 0.95);
+				background-color: rgba(0, 0, 0, 0.00);
 				height: 100%;
 				left: 0;
 				opacity: 0.75;
@@ -4336,11 +4336,11 @@
 
 .site-footer
 {
-  background-color:#26272b;
+  background-color:	#0644b1;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:white;
 }
 .site-footer hr
 {

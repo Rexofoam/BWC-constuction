@@ -231,7 +231,7 @@ body::-webkit-scrollbar {
     z-index: 3;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
   .carousel__item {
     width: 400px;
     height: 318px;

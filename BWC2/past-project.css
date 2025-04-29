@@ -1,0 +1,26 @@
+.projects-section {
+  background: url("resources/past-project-bg.png") no-repeat center center/cover;
+  height: 65vh;
+  position: relative;
+}
+.text-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 15px 60px 5px 60px;
+  text-align: center;
+}
+.image-container {
+  max-width: 416px;
+  max-height: 292px;
+  overflow: hidden !important; /* Prevents image from overflowing */
+  border-radius: 0px;
+}
+
+.image-container img {
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover; /* Ensures image fits inside without distortion */
+}
+
+.image-container:hover img {
+  transform: scale(1.1); /* Zoom effect */
+}

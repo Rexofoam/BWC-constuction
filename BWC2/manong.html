@@ -8,20 +8,56 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./main-style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .projects-section {
+        background: url("resources/manong/2.jpg") no-repeat center center/cover;
+        height: 70vh;
+        position: relative;
+      }
+      .text-container {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        padding: 15px 60px 5px 60px;
+        text-align: center;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100vw;
+        left: 0;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 480px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="resources/logo.jpeg" alt="BWC Logo" />
           <div class="brand-text">
             <span><b>BWC</b></span>
@@ -40,9 +76,15 @@
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html" style="color: black"
+                >Projects</a
+              >
+            </li>
             <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="careers.html">Careers</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li>
@@ -52,164 +94,51 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero-section">
-      <div class="hero-text">
-        <a href="#" class="btn btn-outline-light btn-lg">Find out more →</a>
-      </div>
-    </div>
-    <!-- Company Info Section -->
-    <section class="company-info1">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Left: Text Content -->
-          <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
-            <img
-              src="resources/our_services.png"
-              alt="Company Image"
-              class="company-image"
-            />
-          </div>
-          <!-- Right: Image -->
-          <div class="col-lg-1 col-md-0"></div>
-          <div
-            class="col-lg-5 col-md-12 text-content text-md-center text-lg-start"
-          >
-            <h2 class="abhaya-libre-extrabold">
-              <span style="color: #3b7fd2">Our</span>
-              <span style="color: #002569">Services</span>
-            </h2>
-            <p style="font-size: 18px">
-              BWC Construction Sdn. Bhd. specialises in civil engineering
-              projects related to road work, earth work, bridge work, and slope
-              protection work. With our vast team and fleet of machinery, we are
-              able to fulfil each client’s needs within scheduled deadlines
-              while maintaining top notch quality.
-            </p>
-            <br />
-            <a
-              href="#"
-              class="btn btn-outline-primary"
-              style="
-                font-size: 12px;
-                padding: 10px 30px 10px 30px;
-                border-radius: 0px;
-                letter-spacing: 1.5px;
-              "
-              >EXPLORE ALL SERVICES</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="company-info2">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Left: Text Content -->
-          <div
-            class="col-xl-5 col-md-12 text-content text-md-center text-lg-start"
-          >
-            <h2 class="abhaya-libre-extrabold">
-              <span style="color: #3b7fd2">Our</span>
-              <span style="color: #002569">Projects</span>
-            </h2>
-            <p style="font-size: 18px">
-              Since incorporation in 1997, BWC has successfully completed more
-              than 90 construction projects in Perak and beyond. We have a
-              handful of projects ongoing right now, and am happy to collaborate
-              with new clients to work on exciting new endeavours together.
-            </p>
-            <br />
-            <a
-              href="#"
-              class="btn btn-outline-primary"
-              style="
-                font-size: 12px;
-                padding: 10px 30px 10px 30px;
-                border-radius: 0px;
-                letter-spacing: 1.5px;
-              "
-              >EXPLORE ALL PROJECTS</a
-            >
-          </div>
-          <div class="col-xl-1 col-md-0"></div>
-          <!-- Right: Image -->
-
-          <div class="col-xl-6 col-md-12 text-center mt-4 mt-lg-0">
-            <img
-              src="resources/our_projects.png"
-              alt="Company Image"
-              class="company-image"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="commitment-section">
-      <div class="commitment-text">
+    <div
+      class="projects-section d-flex justify-content-center align-items-center"
+    >
+      <div class="text-container text-content text-md-center">
         <h2 class="abhaya-libre-extrabold">
-          <span style="color: white">Our</span>
-          <span style="color: #3b7fd2">Commitment</span>
+          <span>Manong</span>
         </h2>
-        <br />
-        <p style="color: white; font-size: 18px">
-          At BWCConstruction, we prioritize quality workmanship and excellent
-          service<br />
-          to all our clients, while empowering team members to achieve career
-          growth.
-        </p>
-        <br />
-        <a
-          href="#"
-          class="btn btn-outline-light"
-          style="
-            font-size: 12px;
-            padding: 10px 30px 10px 30px;
-            border-radius: 0px;
-            letter-spacing: 1.5px;
-          "
-          >JOURNEY WITH US</a
-        >
       </div>
     </div>
-    <div class="container">
-      <div class="row align-items-center">
-        <h2
-          class="abhaya-libre-extrabold text-center"
-          style="width: 100%; padding-top: 5vh"
-        >
-          <span style="color: #3b7fd2">Our</span>
-          <span style="color: #002569">Projects</span>
-        </h2>
-        <p style="font-size: 18px" class="text-center">
-          Take a look at some of our most successful projects
-        </p>
-        <div class="carousel">
-          <ul class="carousel__list">
-            <li class="carousel__item" data-pos="-2">1</li>
-            <li class="carousel__item" data-pos="-1">2</li>
-            <li class="carousel__item" data-pos="0">3</li>
-            <li class="carousel__item" data-pos="1">4</li>
-            <li class="carousel__item" data-pos="2">5</li>
-          </ul>
-        </div>
+    <section
+      class="projects-info1"
+      style="margin-top: 70px; margin-bottom: 70px"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Right: Image -->
+          <div class="col-lg-3"></div>
+          <div
+            class="col-lg-6 col-md-12 text-content text-md-center text-lg-start"
+          >
+            <h2 class="abhaya-libre-extrabold">
+              <span style="color: #3b7fd2">Manong</span>
+              <span style="color: #002569">Project</span>
+            </h2>
+            <p style="font-size: 18px">
+              Proposed Works for the Repair of Collapsed Road Shoulder and
+              Related Works at KM 6.00 Jalan Beswok Pos Yum (A300), Kuala
+              Kangsar District, Perak Darul Ridzuan.
+            </p>
+          </div>
+          <div class="col-lg-3"></div>
         </div>
       </div>
-    </div>
-    <div class="container projects-container">
-      <div class="row align-items-center">
-          <a
-          href="#"
-          class="btn btn-outline-primary"
-          style="
-            font-size: 12px;
-            padding: 10px 30px 10px 30px;
-            border-radius: 0px;
-            margin: auto;
-            width: 250px;
-            letter-spacing: 1.5px;
-          "
-          >EXPLORE ALL PROJECTS</a
-        >
+    </section>
+    <div class="mt-5">
+      <div class="gallery">
+        <img src="resources/manong/1.jpg" alt="Project 2" />
+        <img src="resources/manong/3.jpg" alt="Project 3" />
+        <img src="resources/manong/4.jpg" alt="Project 5" />
+        <img src="resources/manong/5.jpg" alt="Project 1" />
+        <img src="resources/manong/7.jpg" alt="Project 2" />
+        <img src="resources/manong/8.jpg" alt="Project 3" />
+        <img src="resources/manong/9.jpg" alt="Project 4" />
+        <img src="resources/manong/10.jpg" alt="Project 5" />
+        <img src="resources/manong/11.jpg" alt="Project 6" />
       </div>
     </div>
     <footer class="bg-light text-dark py-5 montserrat-medium">
@@ -327,7 +256,5 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
     />
-
-    <script src="./card-script.js"></script>
   </body>
 </html>

@@ -65,3 +65,12 @@
   top: 25%;
   left: 10%;
 }
+
+@media (max-width: 1600px) {
+  .commitment-section {
+    background: url("resources/projects-commitment.png") no-repeat center
+      center/cover;
+    height: 75vh;
+    position: relative;
+  }
+}

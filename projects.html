@@ -1,234 +1,347 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>BWC Construction - Projects</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://unpkg.com/swiper@6.4.0/swiper-bundle.min.css">
-		<style type="text/css">
-			.swiper-container {
-		      width: 100%;
-		      height: 420px;
-		      min-height: 100px;
-		    }
-		    .swiper-slide {
-		      text-align: center;
-		      font-size: 18px;
-		      background: #fff;
-		      display: -webkit-box;
-		      display: -ms-flexbox;
-		      display: -webkit-flex;
-		      display: flex;
-		      -webkit-box-pack: center;
-		      -ms-flex-pack: center;
-		      -webkit-justify-content: center;
-		      justify-content: center;
-		      -webkit-box-align: center;
-		      -ms-flex-align: center;
-		      -webkit-align-items: center;
-		      align-items: center;
-		    }
-		  </style>
-	</head>
-	<body class="subpage">
-		<header id="header">
-				<div class="logo"><a href="index.html"><img class="imgholder" src="images/logo.png"></a></div>
-				<a href="index.html" class="big-screen">home</a>
-				<a href="about.html" class="big-screen">about us</a>
-				<a href="services.html" class="big-screen">services</a>
-				<a href="projects.html" class="big-screen"><b>projects</b></a>
-				<a href="gallery.html" class="big-screen">gallery</a>
-				<a href="contact.html" class="big-screen">contact us</a>
-				<a href="#menu" class="small-screen">Menu</a>
-			</header>
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="gallery.html"><b>Gallery</b></a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul>
-			</nav>
-			<section id="One" class="wrapper style3">
-				<div class="inner" style="margin-bottom: -70px;">
-					<header class="align-center">
-						<p>A list of our past, present and future projects</p>
-						<h2>PROJECTS</h2>
-					</header>
-					<br><br>
-					<ul class="actions align-center">
-						<li><a href="projects.html" class="button hid-size">Featured Projects</a></li>
-						<li><a href="current.html" class="button alt hid-size">Current Projects</a></li>
-						<li><a href="history.html" class="button alt hid-size">Past Projects</a></li>
-					</ul>
-				</div>
-			</section>
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-						<div class="content">
-							<div class="box alt">
-								<div class="row 50% uniform">
-									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 5px 5px 5px; min-height: 450px;">
-										 <!-- Swiper -->
-										  <div class="swiper-container">
-										    <div class="swiper-wrapper">
-										      <div class="swiper-slide" style="background-image:url(images/toyo/1.jpg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/toyo/2.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/toyo/3.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/toyo/4.jpg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/toyo/5.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/toyo/6.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/toyo/7.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/toyo/8.jpeg)"></div>
-										    </div>
-										    <div class="swiper-pagination"></div>
-										    <div class="swiper-button-next"></div>
-										    <div class="swiper-button-prev"></div>
-										  </div>
-									</div>
-									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 25px 25px 5px 25px; min-height: 450px;">
-										<h2 >Toyo Tyre Malaysia Phase 2</h2>
-										<ul>
-											<li style="color: black;text-align: left"> Site clearance</li>
-											<li style="color: black;text-align: left"> Road and Drainage </li>
-											<li style="color: black;text-align: left"> Earth work.</li>
-										</ul>
-									</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BWC Construction</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="resources/logo.jpeg" alt="BWC Logo" />
+          <div class="brand-text">
+            <span><b>BWC</b></span>
+            <span>Construction</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 25px 5px 25px; min-height: 450px; margin-top: 10px;">
-										<h2 style="text-align: left">Japan Life Line (JLL) Malaysia Sdn Bhd</h2>
-										<ul>
-											<li style="color: black;text-align: left"> Site clearance</li>
-											<li style="color: black;text-align: left"> Road and Drainage </li>
-											<li style="color: black;text-align: left"> Earth work.</li>
-										</ul>
-									</div>
-									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 5px 5px 5px; min-height: 450px; margin-top: 10px;">
-										 <!-- Swiper -->
-										  <div class="swiper-container">
-										    <div class="swiper-wrapper">
-										      <div class="swiper-slide" style="background-image:url(images/Jll/1.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/Jll/2.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/Jll/3.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/Jll/4.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/Jll/5.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/Jll/6.jpeg)"></div>
-										    </div>
-										    <!-- Add Pagination -->
-										    <div class="swiper-pagination"></div>
-										    <!-- Add Arrows -->
-										    <div class="swiper-button-next"></div>
-										    <div class="swiper-button-prev"></div>
-										  </div>
-									</div>
-									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 5px 5px 5px; min-height: 450px; margin-top: 10px;">
-										 <!-- Swiper -->
-										  <div class="swiper-container">
-										    <div class="swiper-wrapper">
-										      <div class="swiper-slide" style="background-image:url(images/ckt/1.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/2.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/3.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/4.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/5.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/6.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/7.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/8.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/8.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/8.jpeg)"></div>
-										      <div class="swiper-slide" style="background-image:url(images/ckt/8.jpeg)"></div>
-										    </div>
-										    <!-- Add Pagination -->
-										    <div class="swiper-pagination"></div>
-										    <!-- Add Arrows -->
-										    <div class="swiper-button-next"></div>
-										    <div class="swiper-button-prev"></div>
-										  </div>
-									</div>
-									<div class="6u mobile-resize" style="background-color: #f2f2f2; padding: 15px 25px 5px 25px; min-height: 450px; margin-top: 10px;">
-										<h2 style="text-align: center">Roadwork Upgrading From Damar Laut To Changkat Jering</h2>
-										<ul>
-											<li style="color: black;text-align: left"> Site clearance</li>
-											<li style="color: black;text-align: left"> Road and Drainage </li>
-											<li style="color: black;text-align: left"> Bridge work.</li>
-											<li style="color: black;text-align: left"> Slope protection.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+    <!-- Hero Section -->
+    <div
+      class="projects-section d-flex justify-content-center align-items-center"
+    >
+      <div class="text-container text-content text-md-center">
+        <h2 class="abhaya-libre-extrabold">
+          <span>Projects</span>
+        </h2>
+      </div>
+    </div>
 
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Projects Section -->
+    <section class="projects-info1">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Right: Image -->
+          <div class="col-lg-3"></div>
+          <div
+            class="col-lg-6 col-md-12 text-content text-md-center text-lg-start"
+          >
+            <h2 class="abhaya-libre-extrabold">
+              <span style="color: #3b7fd2">Our</span>
+              <span style="color: #002569">Projects</span>
+            </h2>
+            <p style="font-size: 18px">
+              Delivering projects that fulfill and exceed the clients
+              expectations is a process that starts during the conceptual stage
+              with a collaborative team from design through construction. This
+              integrated team approach puts the focus of all team members
+              specifically towards the culmination of the completed
+              project. Check out our projects by clicking on the categories
+              below.
+            </p>
+          </div>
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+    </section>
+    <section class="projects-info2">
+      <div class="container">
+        <div
+          class="container d-flex justify-content-center align-items-center flex-wrap gap-3 mt-5"
+        >
+          <div class="image-container">
+            <a href="past_projects.html">
+              <img src="resources/past-projects.png" alt="Image 1" />
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="current_projects.html">
+              <img src="resources/current-projects.png" alt="Image 2" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hear from our past clients hidden -->
+    <!-- <section class="testimonial-section">
+      <h2 class="abhaya-libre-extrabold">
+        <span style="color: #3b7fd2">Hear from</span>
+        <span style="color: #002569">Our Past Clients</span>
+      </h2>
+      <br />
+      <div
+        id="testimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <div class="testimonial-card text-center">
+                    <div class="quote-icon">
+                      <a href="#" class="text-dark fs-5"
+                        ><i class="bi bi-quote h2" style="color: white"></i
+                      ></a>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vestibulum cursus lacus a arcu fringilla luctus. Nullam
+                      sodales arcu et dictum luctus. Ut ornare est diam, vitae
+                      placerat nisi pharetra vitae. Sed bibendum ac arcu eu
+                      interdum. Maecenas molestie, nulla a porttitor malesuada,
+                      metus mi congue felis, at commodo metus massa non dolor.
+                      Sed orci arcu, ornare et semper in, interdum quis ipsum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-10">
+                  <div class="testimonial-card text-center">
+                    <div><i class="bi bi-quote"></i></div>
+                    <p>
+                      Another client's testimonial text goes here. Great
+                      experience and excellent service!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section> -->
+    <br />
+    <div class="commitment-section">
+      <div class="commitment-text">
+        <h2
+          style="
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            font-weight: bold;
+          "
+        >
+          <span style="color: white"
+            >Got A Vision? We'll Bring It To Life - Let's Build Together!</span
+          >
+        </h2>
+        <br />
+        <p style="color: white; font-size: 18px">
+          Whether you’re planning a new build, or a custom project, we’re here
+          to turn your ideas into reality. <br />Our team of skilled
+          professionals is dedicated to delivering quality, precision, and
+          attention to detail <br />in every step of the process. Ready to get
+          started? <br />Let’s make your vision come to life — reach out to us
+          today!
+        </p>
+        <br />
+        <a
+          href="contactus.html"
+          class="btn btn-outline-light"
+          style="
+            font-size: 12px;
+            padding: 10px 30px 10px 30px;
+            border-radius: 0px;
+            letter-spacing: 1.5px;
+          "
+          >CONTACT US</a
+        >
+      </div>
+    </div>
+    <footer class="bg-light text-dark py-5 montserrat-medium">
+      <div class="footer-container">
+        <div class="row justify-content-between gx-5">
+          <!-- Ensures equal spacing -->
 
-		<!-- Footer -->
-		<footer class="site-footer">
-	      <div class="container">
-	        <div class="row">
-	          <div style="width: 100%">
-	            <h6 style="text-align: center;">&nbsp;CONTACT US</h6>
+          <!-- COMPANY (Left-aligned) -->
+          <div class="col-12 col-md-3 text-start">
+            <h5 class="fw-bold mb-4">COMPANY</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="about.html" class="text-dark text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="about.html" class="text-dark text-decoration-none"
+                  >Vision & Mission</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="careers.html" class="text-dark text-decoration-none"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-dark text-decoration-none"
+                  >Our Services</a
+                >
+              </li>
+            </ul>
+          </div>
 
-	            <ul class="footer-links">
-	              <li style="text-align: center;">PT20, Jalan Logam 1, Kawasan</li>
-	              <li style="text-align: center;">Perindustrian Kamunting Raya</li>
-	              <li style="text-align: center;">34600 Kamunting, Perak</li>
-	              <li style="text-align: center;">Malaysia</li>
-	              <br>
-	              <li style="text-align: center;"><b style="zoom: 1.1">T</b> 012-5068310 &nbsp; <b style="zoom: 1.1">T</b> 05-8913227</li>
-	              <li style="text-align: center;"><b style="zoom: 1.1">E</b> bwcconst@yahoo.com</li>
-	              <li style="text-align: center;"><b style="zoom: 1.1">E</b> techteam@bwcconstruction.com.my</li>
-	            </ul>
-	          </div>
-	        </div>
-	        <hr>
-	      </div>
-	      <div class="container">
-	        <div class="row footer_style">
-	          <div style="width: 320px;">
-	            <p class="copyright-text" >&copy; <b>BWC</b> Construction SDN. BHD. 2020, All rights reserved.
-	            </p>
-	          </div>
+          <!-- QUICK NAVIGATION -->
+          <div class="col-12 col-md-3 text-start">
+            <h5 class="fw-bold mb-4">QUICK NAVIGATION</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="projects.html" class="text-dark text-decoration-none"
+                  >Our Projects</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="current_projects.html"
+                  class="text-dark text-decoration-none"
+                  >Upcoming Projects</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="license_certificate.html"
+                  class="text-dark text-decoration-none"
+                  >License & Certificate</a
+                >
+              </li>
+              <li>
+                <a href="contactus.html" class="text-dark text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
 
-	          <div class="cust_icon">
-	            <ul class="social-icons">
-	              <li><a href="https://www.facebook.com/bwc8310/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="https://wa.me/60125068310" target="_blank" class="icon fa-whatsapp"><span class="label">Facebook</span></a></li>
-				<li><a href="https://www.linkedin.com/company/bwcconstruction/" class="icon fa-linkedin"><span class="label">Email</span></a></li>  
-	            </ul>
-	          </div>
-	        </div>
-	      </div>
-	</footer>
+          <!-- ADDRESS -->
+          <div class="col-12 col-md-3 text-start">
+            <h5 class="fw-bold mb-4">ADDRESS</h5>
+            <p class="mb-3">PT20, Jalan Logam 1, Kawasan</p>
+            <p>Perindustrian Kamunting Raya</p>
+            <p>34600 Kamunting, Perak, Malaysia</p>
+          </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-			 <!-- Initialize Swiper -->
-			  <script>
-			    var swiper = new Swiper('.swiper-container', {
-			      spaceBetween: 30,
-			      centeredSlides: true,
-			      autoplay: {
-			        delay: 1500,
-			        disableOnInteraction: false,
-			      },
-			      pagination: {
-			        el: '.swiper-pagination',
-			        clickable: true,
-			      },
-			      navigation: {
-			        nextEl: '.swiper-button-next',
-			        prevEl: '.swiper-button-prev',
-			      },
-			    });
-			  </script>
+          <!-- CONTACT (Right-aligned) -->
+          <div class="col-12 col-md-3 text-start">
+            <h5 class="fw-bold mb-4">CONTACT</h5>
+            <p class="mb-3">T: 012-5068310</p>
+            <p class="mb-3">T: 05-8913227</p>
+            <p class="mb-0">
+              E:
+              <a
+                href="mailto:bwcconst@yahoo.com"
+                class="text-dark text-decoration-none"
+                >bwcconst@yahoo.com</a
+              >
+            </p>
+          </div>
+        </div>
 
-	</body>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 pt-3 border-top"
+        >
+          <p class="mb-3 mb-md-0 text-center text-md-start">
+            © 2025 BWC Construction Sendirian Berhad (Company No: 199701012389
+            (427885-A)). All rights reserved.
+          </p>
+
+          <!-- Social Media Icons (Right-Aligned) -->
+          <div class="d-flex gap-3">
+            <a
+              href="https://wa.me/60125068310"
+              target="_blank"
+              class="text-dark fs-5"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/bwcconstruction/"
+              target="_blank"
+              class="text-dark fs-5"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/bwc8310/"
+              target="_blank"
+              class="text-dark fs-5"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap Icons for Social Media -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </body>
 </html>
